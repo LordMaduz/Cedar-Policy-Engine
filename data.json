@@ -2,7 +2,7 @@
    {
       "uid":{
          "type":"SecurityGroup",
-         "id":"TMOP_SG_ADMIN"
+         "id":"ADMIN"
       },
       "attrs":{
           "accessLevel": "private"
@@ -17,7 +17,7 @@
    {
       "uid":{
          "type":"SecurityGroup",
-         "id":"TMOP_SG_OWNER"
+         "id":"OWNER"
       },
       "attrs":{
           "accessLevel": "private"
@@ -32,7 +32,7 @@
    {
       "uid":{
          "type":"SecurityGroup",
-         "id":"TMOP_SG_APPROVER"
+         "id":"APPROVER"
       },
       "attrs":{
           "accessLevel": "public"
