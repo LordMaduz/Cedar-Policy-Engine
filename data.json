@@ -1,0 +1,97 @@
+[
+   {
+      "uid":{
+         "type":"SecurityGroup",
+         "id":"ADMIN"
+      },
+      "attrs":{
+          "accessLevel": "private"
+      },
+      "parents":[
+         {
+            "type":"AuthorizationGroup",
+            "id":"Authorization"
+         }
+      ]
+   },
+   {
+      "uid":{
+         "type":"SecurityGroup",
+         "id":"OWNER"
+      },
+      "attrs":{
+          "accessLevel": "private"
+      },
+      "parents":[
+         {
+            "type":"AuthorizationGroup",
+            "id":"Authorization"
+         }
+      ]
+   },
+   {
+      "uid":{
+         "type":"SecurityGroup",
+         "id":"APPROVER"
+      },
+      "attrs":{
+          "accessLevel": "public"
+      },
+      "parents":[
+         {
+            "type":"AuthorizationGroup",
+            "id":"Authorization"
+         }
+      ]
+   },
+    {
+      "uid":{
+         "type":"AuthorizationGroup",
+         "id":"Authorization"
+      },
+      "attrs":{
+         
+      },
+      "parents":[
+         {
+            "type":"ServiceGroup",
+            "id":"Service"
+         }
+      ]
+   },
+   {
+      "uid":{
+         "type":"ServiceGroup",
+         "id":"Service"
+      },
+      "attrs":{
+         
+      },
+      "parents":[
+      ]
+   },
+   {
+      "uid":{
+         "type":"ServiceEndpoint",
+         "id":"GETEndpoints"
+      },
+      "attrs":{
+         
+      },
+      "parents":[
+         
+      ]
+   },
+   {
+      "uid":{
+         "type":"Action",
+         "id":"View"
+      },
+      "attrs":{
+         
+      },
+      "parents":[
+         
+      ]
+   }
+]
